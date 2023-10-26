@@ -15,8 +15,6 @@ export default function AgregarComentario({ addCard }) {
     return (
 
         <div className='agregarComentario'>
-        <h3>¿Quieres agregar un comentario?</h3>
-
             <input 
                 className='boton_comentario'
                 type="text"

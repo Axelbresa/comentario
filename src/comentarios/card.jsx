@@ -9,9 +9,10 @@ function Card() {
     const addCard = (comment) => {
         const newCard = (
             <div key={cards.length} className="card">
-                <Perfil user="axel" timeUser="hace 2 minutos" img="persona.jpg" />
+                <Perfil  />
                 <p>{comment}</p>
-                <Icons />
+                <Icons/>
+
             </div>
         );
         setCards([...cards, newCard]);
@@ -19,6 +20,7 @@ function Card() {
 
     return (
         <div className="Contenedor_comentario">
+        <h3>¿Quieres agregar un comentario?</h3>
             <AgregarComentario addCard={addCard} />
             {cards}
         </div>
