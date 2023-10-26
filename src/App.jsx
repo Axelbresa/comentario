@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import './App.css'
-import Card from './comentarios/agregar_comentario'
+import Card from './comentarios/card'
 
 function App() {
 
