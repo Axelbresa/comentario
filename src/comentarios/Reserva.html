@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Reserva de Cine</title>
+</head>
+<body>
+    <header>
+        <h1>Reserva de Cine</h1>
+    </header>
+
+    <main>
+        <section id="movieSelection">
+            <h2>Selección de Película</h2>
+            <div class="movie">
+                <div class="movie-info">
+                    <h3>Título de la Película 1</h3>
+                    <p>Duración: 2 horas</p>
+                    <p>Sala: 1</p>
+                    <p>Precio: $10.00</p>
+                    <button onclick="reservar('Título de la Película 1', 10.00, 'Sala 1', '2 horas')">Reservar</button>
+                </div>
+                <div class="movie-image">
+                    <img src="" alt="Película 1">
+                </div>
+            </div>
+            <div class="movie">
+                <div class="movie-info">
+                    <h3>Título de la Película 2</h3>
+                    <p>Duración: 1 hora 45 minutos</p>
+                    <p>Sala: 2</p>
+                    <p>Precio: $9.00</p>
+                    <button onclick="reservar('Título de la Película 2', 9.00, 'Sala 2', '1 hora 45 minutos')">Reservar</button>
+                </div>
+                <div class="movie-image">
+                    <img src="pelicula2.jpg" alt="Película 2">
+                </div>
+            </div>
+        </section>
+
+        <section id="reserva">
+            <h2>Reserva</h2>
+            <p>Título: <span id="tituloReserva"></span></p>
+            <p>Sala: <span id="salaReserva"></span></p>
+            <p>Duración: <span id="duracionReserva"></span></p>
+            <p>Cantidad de Boletos: <span id="cantBoletosReserva">0</span></p>
+            <p>Costo Total: $<span id="costoTotalReserva">0.00</span></p>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
