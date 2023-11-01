@@ -1,10 +1,7 @@
-<<<<<<< HEAD
 // App.jsx
-=======
 import { useState } from 'react'
 import './App.css'
 import Card from './comentarios/card'
->>>>>>> 8bc57e107ae263ea2ebd4ff5c1330e206a19aca5
 
 import React from 'react';
 import Usuario from './comentarios/props';

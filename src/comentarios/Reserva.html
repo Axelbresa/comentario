@@ -7,12 +7,20 @@
     <title>Reserva de Cine</title>
 </head>
 <body>
-    <header>
-        <h1>Reserva de Cine</h1>
-    </header>
 
     <main>
-        <section id="movieSelection">
+        <section >
+        <h2 class="titulo_De_mis_reservas">Informacion de mis peliculas reservadas reservas</h2>
+            <div class="info_reserva">
+            <p>Cantidad de Boletos: <span id="cantBoletosReserva">27</span></p>
+            <p>Cantidad de peliculas en espera: <span id="cantBoletosReserva">8</span></p>
+            <p>Cantidad de peliculas de pagadas: <span id="cantBoletosReserva">20</span></p>
+            <p>Costo Total: $<span id="costoTotalReserva">15.000</span></p>
+            </div>
+        </section>
+
+        <section class="movieSelection">
+            <div class="pelicula_contenedor">
             <h2>Selección de Película</h2>
             <div class="movie">
                 <div class="movie-info">
@@ -23,31 +31,27 @@
                     <button onclick="reservar('Título de la Película 1', 10.00, 'Sala 1', '2 horas')">Reservar</button>
                 </div>
                 <div class="movie-image">
-                    <img src="" alt="Película 1">
+                    <img src="../comentarios/persona.jpg" >
                 </div>
             </div>
+
             <div class="movie">
                 <div class="movie-info">
-                    <h3>Título de la Película 2</h3>
-                    <p>Duración: 1 hora 45 minutos</p>
-                    <p>Sala: 2</p>
-                    <p>Precio: $9.00</p>
-                    <button onclick="reservar('Título de la Película 2', 9.00, 'Sala 2', '1 hora 45 minutos')">Reservar</button>
+                    <h3>Título de la Película 1</h3>
+                    <p>Duración: 2 horas</p>
+                    <p>Sala: 1</p>
+                    <p>Precio: $10.00</p>
+                    <button onclick="reservar('Título de la Película 1', 10.00, 'Sala 1', '2 horas')">Reservar</button>
                 </div>
                 <div class="movie-image">
-                    <img src="pelicula2.jpg" alt="Película 2">
+                    <img src="../comentarios/persona.jpg" >
                 </div>
             </div>
-        </section>
 
-        <section id="reserva">
-            <h2>Reserva</h2>
-            <p>Título: <span id="tituloReserva"></span></p>
-            <p>Sala: <span id="salaReserva"></span></p>
-            <p>Duración: <span id="duracionReserva"></span></p>
-            <p>Cantidad de Boletos: <span id="cantBoletosReserva">0</span></p>
-            <p>Costo Total: $<span id="costoTotalReserva">0.00</span></p>
+        </div>
         </section>
+        
+
     </main>
 
     <script src="script.js"></script>

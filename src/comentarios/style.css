@@ -1,27 +1,27 @@
 body {
     font-family: Arial, sans-serif;
+    background: url('./formReserva.jpg') no-repeat;
+    background-size: cover;
 }
 
-header {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 10px;
+.titulo_De_mis_reservas {
+    border: 2px solid rgb(0, 0, 0);
+    color: rgb(14, 118, 209);
 }
 
-main {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+.info_reserva {
+    border: 4px solid black;
+    border-radius: 15px;
+    height: 100%;
+    font-size: large;
+    color: #ccc;
+    background-color: rgb(181, 39, 39);
 }
 
 section {
-    margin-bottom: 20px;
-    width: 48%;
-    /* Para dividir en dos columnas */
+    margin: 15px;
+    align-items: center;
+    text-align: center;
 }
 
 .movie {
@@ -32,28 +32,24 @@ section {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    background-color: #cf0b0b;
+    color: #ccc;
+}
+
+.pelicula_contenedor {
+    color: rgb(14, 118, 209);
 }
 
 .movie-info {
     flex: 1;
     text-align: left;
     padding: 10px;
+    text-align: center;
+
 }
 
 .movie-image {
     flex: 1;
     text-align: center;
-}
-
-button {
-    background-color: #333;
-    color: white;
-    border: none;
-    padding: 5px 10px;
-    cursor: pointer;
-    width: 100%;
-}
-
-button:hover {
-    background-color: #555;
+    height: 100%;
 }
