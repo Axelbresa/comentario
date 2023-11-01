@@ -4,18 +4,19 @@ import './App.css'
 import Card from './comentarios/card'
 
 import React from 'react';
-import Usuario from './comentarios/props';
-import json from './comentarios/usuario.json';
+// import Usuario from './comentarios/props';
+// import json from './comentarios/usuario.json';
 import "./app.css"
 
 const App = () => {
-  const usuarios = json;
+  // const usuarios = json;
 
   return (
     <div>
-      {usuarios.map((usuario) => (
+      <Card />
+      {/* {usuarios.map((usuario) => (
         <Usuario key={usuario.id} id={usuario.id} nombre={usuario.nombre} apellido={usuario.apellido} email={usuario.email} genero={usuario.genero} pais={usuario.pais} />
-      ))}
+      ))} */}
     </div>
   );
 };
