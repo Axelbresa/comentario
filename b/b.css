@@ -6,6 +6,22 @@
     box-sizing: border-box;
 }
 
+.titulo_De_mis_reservas {
+    border: 2px solid rgb(0, 0, 0);
+    color: rgb(14, 118, 209);
+    margin: 40px;
+
+}
+
+.info_reserva {
+    border: 4px solid black;
+    border-radius: 15px;
+    height: 100%;
+    font-size: large;
+    color: #ccc;
+    background-color: rgb(181, 39, 39);
+}
+
 .wrap {
     width: 1300px;
     margin: 50px auto;
